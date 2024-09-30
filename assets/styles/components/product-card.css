@@ -1,0 +1,124 @@
+.wrap-products {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrap-products > div {
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+.card-product {
+  padding: 0 15px;
+  position: relative;
+  background: #fff;
+}
+.col-product {
+  width: 33.33333333%;
+}
+.card-product:hover {
+  box-shadow: 0 7px 15px rgba(0, 0, 0, .19);
+  z-index: 2;
+}
+.card-product__image {
+  height: 415px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-product__image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card-product__title {
+  font-size: 21px;
+  margin-bottom: 15px;
+  color: var(--color-title);
+  display: block;
+}
+.card-product__price {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: var(--color-title);
+}
+.feature {
+  color: var(--color-sub);
+  margin-bottom: 3px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feature span {
+  color: var(--color-black);
+}
+.card-product__button {
+  padding-top: 8px;
+  text-align: center;
+}
+.card-product__details {
+  position: absolute;
+  padding: 10px 15px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+  background: #fff;
+}
+.card-product:hover .card-product__details {
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .19);
+}
+.card-product .btn-main {
+  font-size: 14px;
+  padding: 0 12px;
+  height: 34px;
+  text-transform: none;
+}
+
+
+@media (max-width: 1200px) {
+  .card-product__image {
+    height: 340px;
+  }
+  .card-product__title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .wrap-products {
+    margin: 0 -0px;
+  }
+  .wrap-products > div {
+    padding: 0 0px;
+    margin-bottom: 0;
+  }
+  .card-product__details {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    padding: 0;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-products {
+    display: block;
+  }
+  .col-product {
+    width: 100%;
+  }
+  .card-product__image {
+    height: 275px;
+}
+.card-product {
+  padding: 0;
+  box-shadow: none !important;
+}
+}
