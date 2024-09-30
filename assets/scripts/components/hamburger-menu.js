@@ -3,6 +3,9 @@ $(document).ready(function() {
 
     //кнопка sandwich
     $(".btn-catalog").click(function() {
+      $(".region-main__dropdown").fadeOut(200);
+      $(".region-main__value").removeClass("active");
+      $(".search-form").fadeOut(200);
       if ($(".menu-dropdown").is(":hidden")) {
         $(".menu-dropdown").slideDown(200);
         $(this).addClass("active");
@@ -23,6 +26,9 @@ $(document).ready(function() {
     });
 
     $(".sandwich").click(function() {
+      $(".region-main__dropdown").fadeOut(200);
+      $(".region-main__value").removeClass("active");
+      $(".search-form").fadeOut(200);
       if ($(".menu-dropdown").hasClass("active")) {
         $(".menu-dropdown").removeClass("active");
         $(this).removeClass("active");

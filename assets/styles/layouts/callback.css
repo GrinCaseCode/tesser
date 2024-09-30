@@ -77,4 +77,7 @@
     .form-callback__input {
         flex: 1;
     }
+    .callback__title span span {
+        display: block;
+    }
 }

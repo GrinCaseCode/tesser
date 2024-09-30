@@ -19,6 +19,14 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
   $('.btn-header_search').click(function(event) {
 		event.preventDefault();
+    $(".menu-dropdown").slideUp(200);
+    $(".btn-catalog").removeClass("active");
+    $(".sandwich").removeClass("active");
+    $("body").removeClass("body_menu");
+    $(".menu-overlay").fadeOut(200);
+    $(".menu-dropdown").removeClass("active");
+    $(".region-main__dropdown").fadeOut(200);
+    $(".region-main__value").removeClass("active");
 		$(".search-form").fadeIn(200);
 	});
 

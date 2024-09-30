@@ -716,6 +716,9 @@
   .header__links li::after {
     display: none;
   }
+  .region-main__dropdown {
+    width: 100%;
+  }
 }
 @media (max-width: 440px) {
   .btn-header_location {

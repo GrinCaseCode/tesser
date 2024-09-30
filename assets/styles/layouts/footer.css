@@ -249,6 +249,7 @@
   .footer__socials {
     max-width: 300px;
     margin: 0 auto;
+    margin-bottom: 15px;
     text-align: center;
     justify-content: center;
   }
@@ -266,5 +267,8 @@
   .footer__contacts {
     margin-top: 0;
     border: none;
+  }
+  .form-callback {
+    max-width: 100%;
   }
 }
